@@ -107,6 +107,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe055ddbb21c4d91a39fef061347d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ccTo: 
+  ccFrom: 
+  countryName: 
+  language: 
+  greeting: 
+  flag: 
+  flagImage: {fileID: 0}
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
+  CountryCanvas: {fileID: 0}
+  UI: {fileID: 0}
 --- !u!1 &3560513687100692757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5781,6 +5792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3560513687714951262}
+  - component: {fileID: 8608627615386191769}
   m_Layer: 0
   m_Name: earth
   m_TagString: Untagged
@@ -5805,6 +5817,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.040000003, y: 0, z: 0}
+--- !u!114 &8608627615386191769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560513687715179646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9001c1873a0413e8e57336954b1e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globe: {fileID: 0}
 --- !u!1 &3560513687785899912
 GameObject:
   m_ObjectHideFlags: 0
