@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using SimpleJSON;
 using Vectrosity;
+using System.Text;
 
 
 // added
@@ -92,7 +93,8 @@ public class ClientAPI : MonoBehaviour
                             instance.flag = N["data"][i]["to"]["country"]["flag"];
                             instance.language = N["data"][i]["to"]["country"]["languages"][0]["name"];
                             instance.greeting = N["data"][i]["to"]["country"]["greeting"];
-
+                            // instance.greeting = Encoding.UTF8.GetString(Encoding.Convert(Encoding.Unicode, Encoding.UTF8, Encoding.Unicode.GetBytes($"{greet}")));
+                            
 
                         departure = GameObject.FindGameObjectWithTag($"{instance.ccFrom}");
                             arrival = GameObject.FindGameObjectWithTag($"{instance.ccTo}");
