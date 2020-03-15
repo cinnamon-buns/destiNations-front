@@ -12,6 +12,7 @@ using System.Text;
 class DataItem
 {
     public string username;
+
 }
 // end
 
@@ -96,7 +97,7 @@ public class ClientAPI : MonoBehaviour
                             // instance.greeting = Encoding.UTF8.GetString(Encoding.Convert(Encoding.Unicode, Encoding.UTF8, Encoding.Unicode.GetBytes($"{greet}")));
                             
 
-                        departure = GameObject.FindGameObjectWithTag($"{instance.ccFrom}");
+                            departure = GameObject.FindGameObjectWithTag($"{instance.ccFrom}");
                             arrival = GameObject.FindGameObjectWithTag($"{instance.ccTo}");
                             if (departure != null && arrival != null) 
                             {
