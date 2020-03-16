@@ -16,7 +16,6 @@ TagManager:
   - DE
   - GR
   - FR
-  - CH
   - BR
   - GB
   - AU
@@ -42,6 +41,8 @@ TagManager:
   - titleLarge
   - fullScreenFacts
   - greeting
+  - flagList
+  - CN
   layers:
   - Default
   - TransparentFX

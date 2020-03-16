@@ -39,37 +39,41 @@ public class Airplane : MonoBehaviour, IPointerDownHandler
             {
                 foreach (Transform grandchild in child)
                 {
-                        if (countryName == "United States of America") {
-                            countryName = "The " + countryName; 
-                        }
-                        if (countryName == "United Kingdom of Great Britain and Northern Ireland") {
-                            countryName = "The United Kingdom";
-                        }
+                    if (countryName == "United States of America") {
+                        countryName = "The " + countryName; 
+                    }
+
+                    if (countryName == "United Kingdom of Great Britain and Northern Ireland") {
+                        countryName = "The United Kingdom";
+                    }
+
                     if (grandchild.tag == "mainText")
                     {
-                        // name of the country
                         grandchild.GetComponent<UnityEngine.UI.Text>().text = $"This plane is on its way to...\r\n{countryName}!";
                     }
 
                     if (grandchild.tag == "someFacts")
                     {
                         foreach (Transform ggrandchild in grandchild) {
-                        // some facts about COUNTRYNAME
-                       // if (ggrandchild.tag == "someFacts")
-                   // {
-                        ggrandchild.GetComponent<UnityEngine.UI.Text>().text = $"Learn more about\r\n{countryName}?";
+                            ggrandchild.GetComponent<UnityEngine.UI.Text>().text = $"Learn more about\r\n{countryName}?";
                         }
-                        //}
                     }
 
                     if (grandchild.tag == "flagImg")
                     {
                         grandchild.GetComponent<Image>().sprite = Resources.Load<Sprite>($"{ccTo}");
                     }
+
                     child.gameObject.SetActive(true);
+
                     if (grandchild.tag == "close")
                     {
                         grandchild.gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        grandchild.gameObject.SetActive(true);
+
                     }
                 }
             }

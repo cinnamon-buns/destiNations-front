@@ -32,7 +32,7 @@ public class ClientAPI : MonoBehaviour
     private GameObject departure;
     private GameObject arrival;
     private VectorLine spline;
-    public int segments = 10;
+    public int segments = 100;
     public bool loop = true;
     List<Airplane> airplanes;
     //List<string> countryCodes = new List<string> () {"EG", "US", "DE", "GR", "FR", "CN", "BR", "GB", "AU", "CA", "RU", "JP", "TR", "UK", "TH", "MX", "PH", "DZ", "AE", "ZA", "KR", "ES", "AR", "IN"};
@@ -102,9 +102,11 @@ public class ClientAPI : MonoBehaviour
                             if (departure != null && arrival != null) 
                             {
                             Vector3 midpoint = (departure.transform.position + arrival.transform.position) * 0.5f;
+                            float dist = Vector3.Distance(departure.transform.position, arrival.transform.position);
 
-                            p.position = Vector3.MoveTowards(midpoint, globe.transform.position, -2f);
-                            p.LookAt(arrival.transform);
+                            p.position = Vector3.MoveTowards(midpoint, globe.transform.position, dist * -0.4f);
+                            p.LookAt(Vector3.MoveTowards(arrival.transform.position, globe.transform.position, -2f));
+                            
                             //p.localRotation = Quaternion.Euler(208.305f, -2.268005f, -48.89499f);
                             //p.localScale = new Vector3(0.3f, 0.3f, 0.3f);
 
