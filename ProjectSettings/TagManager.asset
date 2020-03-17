@@ -43,6 +43,7 @@ TagManager:
   - greeting
   - flagList
   - CN
+  - open
   layers:
   - Default
   - TransparentFX

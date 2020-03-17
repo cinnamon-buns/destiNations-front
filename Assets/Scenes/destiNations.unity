@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0069240867, g: 0.0069240867, b: 0.0069240867, a: 1}
+  m_IndirectSpecularColor: {r: 0.0032926209, g: 0.0068892385, b: 0.0032926209, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2730,9 +2730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4fce104146766419323dde8daf7652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  username: 
   flagImage: {fileID: 0}
-  OpenedPassport: {fileID: 0}
+  UI: {fileID: 0}
 --- !u!114 &1819896592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3227,11 +3226,11 @@ GameObject:
   - component: {fileID: 2146271924}
   m_Layer: 5
   m_Name: OpenedPassport
-  m_TagString: Untagged
+  m_TagString: open
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2146271923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4218,7 +4217,7 @@ PrefabInstance:
     - target: {fileID: 8876044945674469193, guid: d84fb14b6b515487899e895b5dd02879,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d84fb14b6b515487899e895b5dd02879, type: 3}
