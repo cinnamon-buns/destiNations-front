@@ -61,8 +61,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-#Firebase
-[Aa]ssets/[Ff]irebase/
-[Aa]ssets/[Ee]ditor Default Resources/
-[Aa]ssets/[Rr]estClient/
